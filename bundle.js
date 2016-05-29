@@ -25424,7 +25424,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        null,
 	                        this.props.title
 	                    ),
-	                    _react2.default.createElement("script", { src: "bundle.js" })
+	                    _react2.default.createElement("script", { src: "/bundle.js" })
 	                ),
 	                _react2.default.createElement(
 	                    "body",
