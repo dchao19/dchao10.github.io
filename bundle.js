@@ -68,6 +68,14 @@
 
 	var _projects2 = _interopRequireDefault(_projects);
 
+	var _apistatus = __webpack_require__(509);
+
+	var _apistatus2 = _interopRequireDefault(_apistatus);
+
+	var _connect = __webpack_require__(510);
+
+	var _connect2 = _interopRequireDefault(_connect);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -93,7 +101,9 @@
 	                { history: _reactRouter.browserHistory },
 	                _react2.default.createElement(_reactRouter.Route, { path: '/', component: _home2.default }),
 	                _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
-	                _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default })
+	                _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default }),
+	                _react2.default.createElement(_reactRouter.Route, { path: '/apistatus', component: _apistatus2.default }),
+	                _react2.default.createElement(_reactRouter.Route, { path: '/connect', component: _connect2.default })
 	            );
 	        }
 	    }]);
@@ -45330,8 +45340,8 @@
 	                            { className: 'navListItem' },
 	                            _react2.default.createElement(
 	                                _reactRouter.Link,
-	                                { to: 'https://github.com/dchao19/', className: 'navItem' },
-	                                'github'
+	                                { to: '/connect', className: 'navItem' },
+	                                'let\'s talk'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -45339,8 +45349,17 @@
 	                            { className: 'navListItem' },
 	                            _react2.default.createElement(
 	                                _reactRouter.Link,
-	                                { to: '/connect', className: 'navItem' },
-	                                'let\'s talk'
+	                                { to: '/apistatus', className: 'navItem' },
+	                                'status'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'navListItem' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/dchao19/', className: 'navItem' },
+	                                'github'
 	                            )
 	                        )
 	                    )
@@ -46105,6 +46124,218 @@
 
 	// module
 	exports.push([module.id, ".project {\n  border-radius: 5px;\n  margin-bottom: 15px; }\n\n.project:hover {\n  background-color: lightgray; }\n\n.projectInfo {\n  padding: 15px 15px 15px 15px; }\n\nimg {\n  width: 100%;\n  height: 140px;\n  border-radius: 5px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 509 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _layout = __webpack_require__(230);
+
+	var _layout2 = _interopRequireDefault(_layout);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var APIStatus = function (_Component) {
+	    _inherits(APIStatus, _Component);
+
+	    function APIStatus() {
+	        _classCallCheck(this, APIStatus);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(APIStatus).apply(this, arguments));
+	    }
+
+	    _createClass(APIStatus, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(_layout2.default, { jumboText: 'status.' });
+	        }
+	    }]);
+
+	    return APIStatus;
+	}(_react.Component);
+
+	exports.default = APIStatus;
+
+/***/ },
+/* 510 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactBootstrap = __webpack_require__(231);
+
+	var _layout = __webpack_require__(230);
+
+	var _layout2 = _interopRequireDefault(_layout);
+
+	__webpack_require__(511);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Connect = function (_Component) {
+	    _inherits(Connect, _Component);
+
+	    function Connect() {
+	        _classCallCheck(this, Connect);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Connect).apply(this, arguments));
+	    }
+
+	    _createClass(Connect, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                _layout2.default,
+	                { jumboText: 'connect.' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'content' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Wanna chat?'
+	                    ),
+	                    _react2.default.createElement(
+	                        'h5',
+	                        null,
+	                        'Connect with me using the below form.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'form' },
+	                        _react2.default.createElement(
+	                            'form',
+	                            null,
+	                            _react2.default.createElement(
+	                                _reactBootstrap.FormGroup,
+	                                { controlId: 'formName' },
+	                                _react2.default.createElement(
+	                                    _reactBootstrap.ControlLabel,
+	                                    null,
+	                                    'Name'
+	                                ),
+	                                _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Who are you?' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _reactBootstrap.FormGroup,
+	                                { controlId: 'formEmail' },
+	                                _react2.default.createElement(
+	                                    _reactBootstrap.ControlLabel,
+	                                    null,
+	                                    'Email'
+	                                ),
+	                                _react2.default.createElement(_reactBootstrap.FormControl, { type: 'email', placeholder: 'Where can I send you a response?' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _reactBootstrap.FormGroup,
+	                                { controlId: 'formSubject' },
+	                                _react2.default.createElement(
+	                                    _reactBootstrap.ControlLabel,
+	                                    null,
+	                                    'Subject'
+	                                ),
+	                                _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'What topic are you connecting about?' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _reactBootstrap.FormGroup,
+	                                { controlId: 'formMessage' },
+	                                _react2.default.createElement(
+	                                    _reactBootstrap.ControlLabel,
+	                                    null,
+	                                    'Message'
+	                                ),
+	                                _react2.default.createElement(_reactBootstrap.FormControl, { componentClass: 'textarea', placeholder: 'What do you want to say?' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _reactBootstrap.Button,
+	                                { bsStyle: 'primary', bsSize: 'large' },
+	                                'Submit!'
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Connect;
+	}(_react.Component);
+
+	exports.default = Connect;
+
+/***/ },
+/* 511 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(512);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(498)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./connect.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./connect.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 512 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(497)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
 
 	// exports
 
